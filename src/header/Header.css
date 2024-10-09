@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Playfair Display", serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+li{
+    list-style: none;
+    color: white;
+    float: left;
+    padding: 25px;
+
+}
+
+h1{
+    font-weight: bold;
+}
+
+li:hover {
+    color: gold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    position: absolute;
+    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+}
+.navbar, .navbar-mobile {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: #1488cc;
+    background: linear-gradient(to left, #1488cc, #2b32b2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 5;
+    text-align: center;
+}
+
+#logo {
+    width: 70px;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}

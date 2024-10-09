@@ -1,0 +1,25 @@
+.project_section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 3%;
+    text-align: center;
+}
+
+.project {
+    padding: 2%;
+    border: 3px solid #1488cc;
+    border-radius: 20px;
+}
+
+.project_img {
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr{
+    border:1px solid #1488cc;
+}

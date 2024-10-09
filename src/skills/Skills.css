@@ -1,0 +1,42 @@
+progress[value] {
+    --color: 
+      linear-gradient(#fff8,#fff0),
+      repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
+      #31c6f7; 
+    --background: lightgrey; 
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+  }
+
+.skills_section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 30px;
+    background-color: ghostwhite;
+    padding: 2%;
+    height: 40%;
+}
+
+#skills {
+    background-color: ghostwhite;
+}

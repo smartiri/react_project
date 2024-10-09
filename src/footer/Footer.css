@@ -1,0 +1,10 @@
+.footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background: #1488cc;
+    background: linear-gradient(to left, #1488cc, #2b32b2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 20px;
+    text-align: center;
+}
