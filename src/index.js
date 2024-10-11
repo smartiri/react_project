@@ -1,15 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Header from './header/Header';
-import Container from './container-layout/Container';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
+import AboutMe from "./about/AboutMe";
+import Cards from "./cards/Cards";
+import Contact from "./contact/Contact";
+import Skills from "./skills/Skills";
+import Container from "./container-layout/Container";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header/>
-    <Container/>
+    <Header />
+    <Container>
+      <AboutMe />
+      <Cards />
+      <Skills />
+      <Contact />
+    </Container>
+    <Footer />
   </React.StrictMode>
 );
 
