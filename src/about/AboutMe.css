@@ -1,10 +1,10 @@
 .article-section {
-    padding: 2%;
-    background-color: ghostwhite;
-    text-align: center;
+  padding: 2%;
+  background-color: ghostwhite;
+  text-align: center;
 }
 
 .about_img > img {
-    border-radius: 50%;
-    border: 5px double #1488cc;
+  border-radius: 50%;
+  border: 5px double #1488cc;
 }

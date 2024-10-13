@@ -7,7 +7,7 @@ export default function Modal({
   description,
   image_path,
   handleClose,
-}) {
+}) {    
   return (
     <div id="modal" class="modal">
       <div class="modal-content">

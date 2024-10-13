@@ -2,6 +2,7 @@ import "../cards/Cards.css";
 import React, { useState, useEffect } from "react";
 import data from "../projects.json";
 import Modal from "../modal/Modal";
+import PropTypes from "prop-types";
 export default function Cards() {
   const [items, setItems] = useState([]);
   const [showModal, setShowModal] = useState(null);
@@ -41,3 +42,11 @@ export default function Cards() {
     </>
   );
 }
+
+Cards.propTypes = {
+  name: PropTypes.string,
+  title: PropTypes.string,
+  image_path: PropTypes.string,
+  description: PropTypes.string,
+  onClick: PropTypes.func,
+};
