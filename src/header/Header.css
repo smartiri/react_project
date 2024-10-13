@@ -12,7 +12,7 @@ body {
 
 li {
   list-style: none;
-  color: white;
+  color: black;
   float: left;
   padding: 25px;
 }
@@ -27,7 +27,7 @@ li:hover {
 
 a {
   text-decoration: none;
-  color: white;
+  transition: all 0.5s;
 }
 .container {
   position: absolute;
@@ -40,12 +40,7 @@ a {
   position: fixed;
   width: 100%;
   padding: 10px;
-  background: #1488cc;
-  background: linear-gradient(
-    to left,
-    #1488cc,
-    #2b32b2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;
   z-index: 5;
   text-align: center;
 }
@@ -54,7 +49,6 @@ a {
   width: 70px;
   height: 100%;
   float: left;
-  padding: 10px;
 }
 .navbar {
   display: block;
@@ -71,16 +65,12 @@ a {
   }
   li {
     list-style: none;
-    color: white;
     border: 1px solid white;
     width: calc(100% - 70px);
   }
   #logo {
     width: 100px;
     height: 100%;
-    float: right;
-    margin: 0 20vw;
-    /* padding: 10px; */
   }
 
   #mobile-menu {
@@ -90,18 +80,20 @@ a {
     text-align: center;
   }
   #hamb-icon {
-    color: white;
+    /* color: white; */
     border: none;
     font-size: 20px;
   }
   #hamb-icon:hover {
     color: gold;
     border: none;
+    background-color: transparent;
   }
 
   .flexrow-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   #whole-menu {
     /* display: none; */

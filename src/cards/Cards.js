@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 export default function Cards() {
   const [items, setItems] = useState([]);
   const [showModal, setShowModal] = useState(null);
+  const [selectedName, setSelectedName] = useState("");
   useEffect(() => {
     setItems(data);
   }, []);
@@ -14,30 +15,58 @@ export default function Cards() {
     setShowModal(null);
   };
 
+  const handleClick = (name) => {
+    setSelectedName(name);
+  };
+
   return (
     <>
-      <h1>Projects</h1>
+      <h1 className="p-title">Projects</h1>
+      <div class="project_section">
+        <button className="p-filter" onClick={() => handleClick("all")}>
+          All
+        </button>
+        <button className="p-filter" onClick={() => handleClick("python")}>
+          Python
+        </button>
+        <button className="p-filter" onClick={() => handleClick("php")}>
+          Php
+        </button>
+        <button className="p-filter" onClick={() => handleClick("solidity")}>
+          Solidity
+        </button>
+        <button className="p-filter" onClick={() => handleClick("java")}>
+          Java
+        </button>
+      </div>
       <div id="project" class="project_section">
-        {items.map((item) => (
-          <div class="project" key={item.id}>
-            <img src={item.image_path} alt={item.title} class="project_img" />
-            <hr />
-            <h2 class="project_title">{item.title}</h2>
-            <button type="button" onClick={(e) => setShowModal(item.id)}>
-              View More
-            </button>
-            {showModal === item.id && (
-              <Modal
-                id={item.id}
-                name={item.name}
-                title={item.title}
-                image_path={item.image_path}
-                description={item.description}
-                handleClose={handleClose}
-              />
-            )}
-          </div>
-        ))}
+        {items
+          .filter(
+            (item) =>
+              item.category === selectedName ||
+              selectedName === "all" ||
+              selectedName === ""
+          )
+          .map((item) => (
+            <div class="project" key={item.id}>
+              <img src={item.image_path} alt={item.title} class="project_img" />
+              <hr />
+              <h2 class="project_title">{item.title}</h2>
+              <button type="button" onClick={(e) => setShowModal(item.id)}>
+                View More
+              </button>
+              {showModal === item.id && (
+                <Modal
+                  id={item.id}
+                  name={item.name}
+                  title={item.title}
+                  image_path={item.image_path}
+                  description={item.description}
+                  handleClose={handleClose}
+                />
+              )}
+            </div>
+          ))}
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 progress[value] {
   --color: linear-gradient(#fff8, #fff0),
-    repeating-linear-gradient(135deg, #0003 0 10px, #0000 0 20px), #31c6f7;
+    repeating-linear-gradient(135deg, #0003 0 10px, #0000 0 20px), dodgerblue;
   --background: lightgrey;
 
   -webkit-appearance: none;
@@ -30,13 +30,12 @@ progress[value]::-moz-progress-bar {
   grid-template-columns: auto auto auto;
   text-align: center;
   gap: 30px;
-  background-color: ghostwhite;
   padding: 2%;
-  height: 40%;
+  height: 30vw;
 }
 
-#skills {
-  background-color: ghostwhite;
+#s-title {
+  padding: 2%;
 }
 
 @media only screen and (max-width: 700px) {

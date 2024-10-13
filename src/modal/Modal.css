@@ -14,32 +14,33 @@
 }
 
 .close {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   float: left;
 }
-.close:hover,
-.close:focus {
-  color: #000;
+.close:hover {
+  color: green;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #1488cc;
-  color: white;
+  background-color: ghostwhite;
+  border-bottom: 2px solid grey;
 }
 
 .modal-body {
   background-color: white;
   padding: 2px 16px;
+  /* font-size: 20px; */
 }
 
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #1488cc;
-  color: white;
+  padding: 25px;
+  background-color: ghostwhite;
+  border-top: 2px solid grey;
 }
 
 .modal-content {
@@ -48,4 +49,5 @@
   justify-content: center;
   flex-direction: column;
   margin: 6% 25%;
+  border: 2px solid grey;
 }

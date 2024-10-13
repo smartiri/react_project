@@ -4,14 +4,28 @@
   gap: 20px;
   padding: 3%;
   text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/assets/newspaper-aesthetic.jpg");
+  background-repeat: no-repeat;
 }
 
 .project {
   padding: 2%;
-  border: 3px solid #1488cc;
+  border: 3px solid gray;
   border-radius: 20px;
+  background-color: white;
+  box-shadow: 10px 10px 5px black;
 }
-
+.p-title {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/assets/newspaper-aesthetic.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2%;
+}
+.p-filter {
+  background-color: white;
+}
 .project_img {
   width: 50%;
 }
@@ -21,7 +35,7 @@ h1 {
 }
 
 hr {
-  border: 1px solid #1488cc;
+  border: 1px solid gray;
 }
 
 @media only screen and (max-width: 700px) {

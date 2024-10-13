@@ -1,0 +1,63 @@
+a {
+  color: white;
+}
+
+a:focus,
+a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/assets/newspaper-aesthetic.jpg");
+  background-repeat: no-repeat;
+  height: 40vw;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  /* padding-top: 20%; */
+  font-size: 100px;
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/public/assets/newspaper-aesthetic.jpg");
+    background-repeat: no-repeat;
+    height: 40vw;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    padding-top: 10%;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/public/assets/newspaper-aesthetic.jpg");
+    background-repeat: no-repeat;
+    height: 35vw;
+  }
+
+  .hero {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    font-size: 15px;
+  }
+}
