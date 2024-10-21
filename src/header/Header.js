@@ -22,16 +22,16 @@ export default function Header() {
           <a href="/">
             <li>Home</li>
           </a>
-          <a href="#article">
+          <a href="/aboutme">
             <li>About Me</li>
           </a>
-          <a href="#project">
+          <a href="/project">
             <li>Project</li>
           </a>
-          <a href="#skills">
+          <a href="/skills">
             <li>Skills</li>
           </a>
-          <a href="#contact">
+          <a href="/contact">
             <li>Contact</li>
           </a>
         </ul>
@@ -55,16 +55,16 @@ export default function Header() {
               <a href="/">
                 <li>Home</li>
               </a>
-              <a href="#article">
+              <a href="/aboutme">
                 <li>About Me</li>
               </a>
-              <a href="#project">
+              <a href="/project">
                 <li>Project</li>
               </a>
-              <a href="#skills">
+              <a href="/skills">
                 <li>Skills</li>
               </a>
-              <a href="#contact">
+              <a href="/contact">
                 <li>Contact</li>
               </a>
             </ul>
