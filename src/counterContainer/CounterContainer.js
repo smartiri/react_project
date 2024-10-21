@@ -1,5 +1,5 @@
 import "../counterContainer/CounterConatiner.css";
-
+import CounterInput from "../counterInput/CounterInput";
 export default function CounterContainer({
   count,
   increment,
@@ -13,18 +13,17 @@ export default function CounterContainer({
   return (
     <>
       <div>
-        <input
-          type="text"
-          placeholder="set upperLimit"
-          onChange={(e) => setUpperLimit(Number(e.target.value))}
+        <CounterInput
+          placeholder={"set upperLimit"}
+          setFunction={setUpperLimit}
         />
         <br />
         <br />
-        <input
-          type="text"
-          placeholder="set increment"
-          onChange={(e) => setIncrement(Number(e.target.value))}
+        <CounterInput
+          placeholder={"set increment"}
+          setFunction={setIncrement}
         />
+
         <p>Counter: {count}</p>
         <button
           className="btn"

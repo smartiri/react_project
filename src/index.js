@@ -3,10 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App.js";
+import Contact from "./contact/Contact.js";
+import Hero from "./hero/Hero.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App></App>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/hero/:slug" element={<Hero />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

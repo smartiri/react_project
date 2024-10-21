@@ -7,21 +7,22 @@ import Header from "./header/Header";
 // import Contact from "./contact/Contact";
 // import Skills from "./skills/Skills";
 import Container from "./container-layout/Container";
+import UnitConverter from "./unitConverter/UnitConverter";
 // import Hero from "./hero/Hero";
 import Counter from "./counter/Counter";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Container>
-        <Counter />
+        <UnitConverter />
         {/* <Hero />
         <AboutMe />
         <Cards />
         <Skills />
         <Contact /> */}
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
