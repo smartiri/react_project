@@ -11,7 +11,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<App />} />{" "}
+        {/* other attributes: errorElement loader */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/hero/:slug" element={<Hero />} />
       </Routes>
